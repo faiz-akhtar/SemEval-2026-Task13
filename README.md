@@ -67,7 +67,7 @@ Classify each code snippet as one of:
   - In this GitHub repo as `.parquet` file
 
 - For each subtask:
-  - Code snippets are in `.parquet` files in the corresponding folders. These files contain `code`,  `label` (which is label id), and additional meta-data such as programming language (`language`), and the `generator`.
+  - Dataset contains `code`,  `label` (which is label id), and additional meta-data such as programming language (`language`), and the `generator`.
   - Label mappings (`label_to_id.json` and `id_to_label.json`) are provided in each task folder  
 
 ---
