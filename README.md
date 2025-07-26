@@ -80,4 +80,4 @@ Classify each code snippet as one of:
 
 - Sample submission files are available in each task’s folder  
 - A **single scorer script** (`scorer.py`) is used for all subtasks  
-- Evaluation metric: **macro F1** for all subtasks
+- Evaluation measure: **macro F1** for all subtasks
