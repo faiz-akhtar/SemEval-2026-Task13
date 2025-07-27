@@ -71,6 +71,15 @@ Classify each code snippet as one of:
   - Label mappings (`label_to_id.json` and `id_to_label.json`) are provided in each task folder  
 
 ---
+## 🔒 Data and Model Restrictions
+
+- The use of **additional training data is not allowed**. Participants must use only the official training sets provided for each subtask.
+- It is also **not permitted to use models that have been pre-trained specifically for AI-generated code detection** by third parties.
+- However, participants are allowed to use **general-purpose or code-oriented pre-trained models** (e.g., CodeBERT, StarCoder, etc.)
+
+Please adhere strictly to these rules to ensure a fair comparison across submissions. If you have any doubts, contact task organizers
+
+---
 
 ## 📤 Submission Format
 
