@@ -62,7 +62,7 @@ Classify each code snippet as one of:
 ## 📁 Data Format
 
 - All data will be released via:
-  - [Kaggle](#)  
+  - [Kaggle](https://www.kaggle.com/datasets/daniilor/semeval-2026-task13)  
   - [HuggingFace Datasets](https://huggingface.co/datasets/DaniilOr/SemEval-2026-Task13)
   - In this GitHub repo as `.parquet` file
 
