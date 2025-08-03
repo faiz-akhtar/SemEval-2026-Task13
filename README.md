@@ -90,3 +90,42 @@ Please adhere strictly to these rules to ensure a fair comparison across submiss
 - Sample submission files are available in each task’s folder  
 - A **single scorer script** (`scorer.py`) is used for all subtasks  
 - Evaluation measure: **macro F1** for all subtasks
+
+## Citation
+Our task is based on enriched data from our previous works. Please, consider citing them, when using data from this task
+
+Droid: A Resource Suite for AI-Generated Code Detection
+```
+@misc{orel2025textttdroidresourcesuiteaigenerated,
+      title={$\texttt{Droid}$: A Resource Suite for AI-Generated Code Detection}, 
+      author={Daniil Orel and Indraneil Paul and Iryna Gurevych and Preslav Nakov},
+      year={2025},
+      eprint={2507.10583},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2507.10583}, 
+}
+```
+
+CoDet-M4: Detecting Machine-Generated Code in Multi-Lingual, Multi-Generator and Multi-Domain Settings
+```
+@inproceedings{orel-etal-2025-codet,
+    title = "{C}o{D}et-M4: Detecting Machine-Generated Code in Multi-Lingual, Multi-Generator and Multi-Domain Settings",
+    author = "Orel, Daniil  and
+      Azizov, Dilshod  and
+      Nakov, Preslav",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.550/",
+    pages = "10570--10593",
+    ISBN = "979-8-89176-256-5",
+}
+```
+
