@@ -63,7 +63,7 @@ Classify each code snippet as one of:
 
 - All data will be released via:
   - [Kaggle](#)  
-  - [HuggingFace Datasets](#)
+  - [HuggingFace Datasets](https://huggingface.co/datasets/DaniilOr/SemEval-2026-Task13)
   - In this GitHub repo as `.parquet` file
 
 - For each subtask:
