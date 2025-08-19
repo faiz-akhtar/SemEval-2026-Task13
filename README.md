@@ -91,6 +91,32 @@ Please adhere strictly to these rules to ensure a fair comparison across submiss
 - A **single scorer script** (`scorer.py`) is used for all subtasks  
 - Evaluation measure: **macro F1** for all subtasks
 
+
+## FAQs
+> **Q1: What’s the participation process and how do I register?**
+
+We will release our Kaggle website soon for participant registration. You can register anytime before the evaluation phase begins. Once registered, simply prepare your detection results and submit them before the evaluation deadline.
+
+> **Q2: There are three tasks. Do I have to participate in all of them, or can I choose?**
+
+You are free to participate in one, two, or all three tasks—it’s completely up to you.
+
+> **Q3: What are the important dates for the project?**
+
+We aim to align all key dates with the official SemEval committee schedule and will announce them accordingly.
+
+## Preliminary Important Dates
+- Sample data ready: 15 July 2025
+- Training data ready: **1 September 2025**
+- Evaluation data ready: 1 December 2025 
+- Evaluation data ready and evaluation start: 10 January 2026
+- Evaluation end: 24 January 2026
+- Paper submission due: February 2026
+- Notification to authors: March 2026
+- Camera ready due April 2026
+- SemEval workshop Summer 2026 (co-located with a major NLP conference)
+
+
 ## Citation
 Our task is based on enriched data from our previous works. Please, consider citing them, when using data from this task
 
