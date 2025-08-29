@@ -6,12 +6,12 @@ def evaluate(pred_path, gold_path):
     pred_df = pd.read_csv(pred_path)
     gold_df = pd.read_csv(gold_path)
 
-    merged = pd.merge(gold_df, pred_df, on="id", suffixes=("_gold", "_pred"))
+    merged = pd.merge(gold_df, pred_df, on="ID")
     if merged.empty:
         raise ValueError("No matching IDs between prediction and gold files.")
 
-    y_true = merged["label_gold"]
-    y_pred = merged["label_pred"]
+    y_true = merged["label"]
+    y_pred = merged["prediction"]
 
 
     macro_f1 = f1_score(y_true, y_pred, average="macro")
