@@ -9,7 +9,7 @@ def check_format(pred_path, task, main_path):
 
     df = pd.read_csv(pred_path)
 
-    if "id" not in df.columns or "label" not in df.columns:
+    if "ID" not in df.columns or "label" not in df.columns:
         raise ValueError("CSV must contain 'id' and 'label' columns.")
 
     label_path = os.path.join(main_path, os.path.join(f"task_{task.upper()}", "id_to_label.json"))
