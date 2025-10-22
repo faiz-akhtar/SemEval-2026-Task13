@@ -44,8 +44,13 @@ def predict(model_path, parquet_path, output_path, max_length=512, batch_size=16
     model, tokenizer = load_model_and_tokenizer(model_path, device)
 
     # Stream parquet dataset (no memory blowup!)
-    dataset = load_dataset("parquet", data_files=parquet_path, split="train", streaming=True)
+    # dataset = load_dataset("parquet", data_files=parquet_path, split="train", streaming=True)
 
+    dataset = load_dataset("DaniilOr/SemEval-2026-Task13", "A")
+    dataset = dataset['test']
+    logger.info(f"Loaded {len(dataset)} test samples")
+    dataset = dataset.to_pandas()
+    
     # Validate schema
     first_row = next(iter(dataset))
     if not {"ID", "code"}.issubset(first_row.keys()):
@@ -78,9 +83,9 @@ def predict(model_path, parquet_path, output_path, max_length=512, batch_size=16
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run inference with trained CodeBERT model (streaming)")
-    parser.add_argument("--model_path", type=str, required=True, help="Path to trained model folder")
-    parser.add_argument("--parquet_path", type=str, required=True, help="Path to input parquet file with ID and code")
-    parser.add_argument("--output_path", type=str, required=True, help="Path to save predictions CSV")
+    parser.add_argument("--model_path", type=str, default='./results', help="Path to trained model folder")
+    parser.add_argument("--parquet_path", type=str, required='./results', help="Path to input parquet file with ID and code")
+    parser.add_argument("--output_path", type=str, required='./test_results', help="Path to save predictions CSV")
     parser.add_argument("--max_length", type=int, default=512, help="Maximum sequence length")
     parser.add_argument("--batch_size", type=int, default=16, help="Batch size for inference")
     parser.add_argument("--device", type=str, default=None, help="Force device: cpu or cuda")
